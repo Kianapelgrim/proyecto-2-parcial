@@ -5,7 +5,12 @@
             <th>Eliminar</th>
             <th>id</th>
             <th>Nombre</th>
-            
+            <th>Emision</th>
+            <th>idProducto</th>
+            <th>idEmpleado</th>
+            <th>Subtotal</th>
+            <th>Total</th>
+            <th>Metodo</th>
         </tr>
         {% for data in object_list %}
         <tr>
@@ -13,6 +18,12 @@
             <td><a href="{% url 'factura_eliminar' data.idFactura %}">Eliminar</a></td>
             <td>{{data.idFactura}}</td>
             <td>{{data.nombreCliente}}</td>
+            <td>{{data.FacturaEmision}}</td>
+            <td>{{data.idProducto}}</td>
+            <td>{{data.idEmpleado}}</td>
+            <td>{{data.Subtotal}}</td>
+            <td>{{data.Total}}</td>
+            <td>{{data.MetodoPago}}</td>
          </tr>
           {% endfor %}
      </table>

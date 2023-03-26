@@ -81,7 +81,7 @@ WSGI_APPLICATION = 'proyecto.wsgi.application'
 DATABASES = {
   'default': {
             'ENGINE': 'django.db.backends.mysql',
-            'NAME': 'mercadito',
+            'NAME': 'project',
             'USER': 'root',
             'PASSWORD': '',
             'HOST': 'localhost',

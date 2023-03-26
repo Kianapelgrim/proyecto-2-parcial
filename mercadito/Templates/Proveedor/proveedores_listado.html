@@ -5,6 +5,9 @@
             <th>Eliminar</th>
             <th>id</th>
             <th>Nombre</th>
+            <th>Direccion</th>
+            <th>Telefono</th>
+            <th>Correo</th>
             
         </tr>
         {% for data in object_list %}
@@ -13,6 +16,9 @@
             <td><a href="{% url 'proveedores_eliminar' data.idProveedor %}">Eliminar</a></td>
             <td>{{data.idProveedor}}</td>
             <td>{{data.nombreProveedor}}</td>
+            <td>{{data.ProveedorDireccion}}</td>
+            <td>{{data.ProveedorTelefono}}</td>
+            <td>{{data.ProveedorCorreo}}</td>
          </tr>
           {% endfor %}
      </table>

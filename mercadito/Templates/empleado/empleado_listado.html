@@ -6,6 +6,10 @@
             <th>id</th>
             <th>Nombre</th>
             <th>edad</th>
+            <th>Telefono</th>
+            <th>Salario</th>
+            <th>Contratacion</th>
+            <th>Correo</th>
         </tr>
         {% for data in object_list %}
         <tr>
@@ -14,6 +18,10 @@
             <td>{{data.idEmpleado}}</td>
             <td>{{data.EmpleadoNombre}}</td>
             <td>{{data.EmpleadoEdad}}</td>
+            <td>{{data.EmpleadoTel}}</td>
+            <td>{{data.EmpleadoSalario}}</td>
+            <td>{{data.EmpleadoFechaContratacion}}</td>
+            <td>{{data.EmpleadoCorreo}}</td>
          </tr>
           {% endfor %}
      </table>
